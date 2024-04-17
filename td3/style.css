@@ -19,7 +19,7 @@ form label {
     width: 12em;
 }
 
-.test {
+.erreur {
     display: none;
     color: red;
     padding: 4px;

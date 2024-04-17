@@ -19,32 +19,32 @@
                     <option value="mme">Mme</option>
                     <option value="prononcepas">Ne se prononce pas</option>
                 </select>
-                <span id="champGenre" class="test">Le genre est obligatoire</span>
+                <span id="champGenre" class="erreur">Le genre est obligatoire</span>
             </div>
             <div>
                 <label for="nom">Nom :</label>
                 <input type="text" name="nom" id="nom" onkeyup="verifierNom()">
-                <span id="champNom" class="test">Saisir un nom, entre 2 et 10 caracteres</span>
+                <span id="champNom" class="erreur">Saisir un nom, entre 2 et 10 caracteres</span>
             </div>
             <div>
                 <label for="prenom">Prenom :</label>
                 <input type="text" name="prenom" id="prenom" onkeyup="verifierPrenom()">
-                <span id="champPrenom" class="test">Saisir un prenom, entre 2 et 10 caracteres</span>
+                <span id="champPrenom" class="erreur">Saisir un prenom, entre 2 et 10 caracteres</span>
             </div>
             <div>
                 <label for="codePostal">Code postal :</label>
                 <input type="text" name="codePostal" id="codePostal" onkeyup="verifierCodePostal()">
-                <span id="champCodePostal" class="test">Saisir un code postal valide</span>
+                <span id="champCodePostal" class="erreur">Saisir un code postal valide</span>
             </div>
             <div>
                 <label for="email">Email :</label>
                 <input type="email" name="email" id="email" onkeyup="verifierEmail()">
-                <span id="champEmail" class="test">Saisir une adresse email valide</span>
+                <span id="champEmail" class="erreur">Saisir une adresse email valide</span>
             </div>
             <div>
                 <label for="telephone">Telephone :</label>
                 <input type="tel" name="telephone" id="telephone" onkeyup="verifierTel()">
-                <span id="champTel" class="test">Saisir un numéro de téléphone valide</span>
+                <span id="champTel" class="erreur">Saisir un numéro de téléphone valide</span>
             </div>
 
             <hr>
@@ -69,12 +69,12 @@
                            onkeyup="verifierMdp()"
                            onfocus="document.getElementById('explication').style.display = 'block'"
                            onblur="document.getElementById('explication').style.display = 'none'">
-                    <span id="champMdp" class="test">Le mot de passe est trop faible.</span>
+                    <span id="champMdp" class="erreur">Le mot de passe est trop faible.</span>
                 </div>
                 <div>
                     <label for="mdp2">Confirmer passe :</label>
                     <input type="password" name="mdp2" id="mdp2" onkeyup="verifierMdp2()">
-                    <span id="champMdp2" class="test"></span>
+                    <span id="champMdp2" class="erreur"></span>
                 </div>
             </div>
 
@@ -82,7 +82,7 @@
             <div>
                 <label for="accept">Acceptez les conditions d'utilisation :</label>
                 <input type="checkbox" name="accept" id="accept">
-                <span id="champAcceptation" class="test">Veuillez accepter les conditions pour continuer</span>
+                <span id="champAcceptation" class="erreur">Veuillez accepter les conditions pour continuer</span>
             </div>
 
             <p>
